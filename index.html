@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="https://images.emojiterra.com/twitter/v12/512px/1f37b.png" />
+        <title>aimeric's bar</title>
+        <style>
+            .hiddermaster {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+
+<div class="loadingpage">
+    <iframe width="103%" height="100%" src="./loadingpage.html"></iframe>
+</div>
+
+
+<div class="mainpage hiddermaster">
+    <iframe width="103%" height="100%" src="./mainpage.html"></iframe>
+</div>
+
+<script src="js/jquery.js"></script>
+<script id="rendered-js">
+function hiddermain()
+{
+    console.log("hidder main lancés")
+setTimeout(hidderinit, 4000) 
+
+}
+function hidderinit()
+{
+    $('.loadingpage').addClass("hiddermaster");
+    $('.mainpage').removeClass("hiddermaster");
+    console.log("hidder changé")
+}
+hiddermain()
+        </script>
+</body>
+</html>
